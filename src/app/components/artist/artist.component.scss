@@ -15,15 +15,18 @@
   float: left;
 }
 
-.artist.albums .well {
+.artist-albums :hover {
+  cursor: pointer;
+}
+
+.artist-albums .well {
   margin-bottom: 20px;
   overflow: auto;
-  min-height: 400px;
+  min-height: 350px;
 }
 
 .album {
   text-align: center;
-  background: #333;
   padding: 10px 20px;
   border: #666 1px solid;
 }
