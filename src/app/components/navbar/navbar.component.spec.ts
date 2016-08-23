@@ -1,18 +1,12 @@
 import {TestBed} from "@angular/core/testing";
 import {By} from "@angular/platform-browser";
 import {NavbarComponent} from "./navbar.component";
-import {BrowserDynamicTestingModule, platformBrowserDynamicTesting} from "@angular/platform-browser-dynamic/testing";
 
 describe('NavbarComponent', () => {
     let component:any;
 
     beforeEach(() => {
-        TestBed
-            .initTestEnvironment(
-                BrowserDynamicTestingModule,
-                platformBrowserDynamicTesting()
-            )
-            .configureTestingModule({declarations: [NavbarComponent]});
+        TestBed.configureTestingModule({declarations: [NavbarComponent]});
     });
 
     beforeEach(() => {

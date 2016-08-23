@@ -1,17 +1,11 @@
 import {TestBed} from "@angular/core/testing";
 import {AppComponent} from "./app.component";
-import {BrowserDynamicTestingModule, platformBrowserDynamicTesting} from "@angular/platform-browser-dynamic/testing";
 
 describe('AppComponent', () => {
     let component:any;
 
     beforeEach(() => {
-        TestBed
-            .initTestEnvironment(
-                BrowserDynamicTestingModule,
-                platformBrowserDynamicTesting()
-            )
-            .configureTestingModule({declarations: [AppComponent]});
+        TestBed.configureTestingModule({declarations: [AppComponent]});
     });
 
     beforeEach(() => {
