@@ -5,6 +5,6 @@ describe('Navbar', () => {
 
     it('should have <nav>', () => {
         let navbar = element(by.css('nav'));
-        expect(home.isPresent()).toEqual(true);
+        expect(navbar.isPresent()).toEqual(true);
     });
 });

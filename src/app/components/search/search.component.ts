@@ -7,7 +7,6 @@ import {Artist} from '../../models/Artist';
 @Component({
     selector: 'search',
     templateUrl: './search.component.html',
-    styleUrls: ['./search.component.scss'],
     directives: [ROUTER_DIRECTIVES]
 })
 export class SearchComponent {
@@ -21,6 +20,7 @@ export class SearchComponent {
     searchMusic() {
         this._spotifyService.searchMusic(this.searchStr)
             .subscribe(res => {
+                //noinspection TypeScriptUnresolvedVariable
                 this.searchRes = res.artists.items;
             });
     }
