@@ -55,7 +55,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "1.7.0",
     "jasmine-core": "~2.4.1",
-    "jasmine-spec-reporter": "^2.4.0",
+    "jasmine-spec-reporter": "^2.4.1",
     "protractor": "^3.3.0",
     "rimraf": "^2.5.2",
     "remap-istanbul": "^0.6.4",

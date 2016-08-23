@@ -10,12 +10,13 @@ env:
     - DBUS_SESSION_BUS_ADDRESS=/dev/null
     - DISPLAY=:99.0
     - CHROME_BIN=chromium-browser
+install:
+  - npm install -g protractor
+  - webdriver-manager update
+  - npm install
 before_script:
   - sh -e /etc/init.d/xvfb start
   - npm start &
-  - sleep 5
-install:
-  - npm install -g protractor
-  - npm install
+  - sleep 10
 script:
   - npm run ci
