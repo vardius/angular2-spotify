@@ -5,9 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class SpotifyService {
 
-    constructor(private _http:Http) {
-
-    }
+    constructor(private _http:Http) {}
 
     searchMusic(str:string, type = 'artist') {
         let url = `https://api.spotify.com/v1/search?query=${str}&offset=0&limit=20&type=${type}&market=US`;
